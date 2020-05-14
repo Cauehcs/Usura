@@ -118,18 +118,24 @@ public class PomodoroFuction : MonoBehaviour
         btnPlay.GetComponent<Button>().interactable = true;
         btnStop.GetComponent<Button>().interactable = true;
 
+        float timeTotal = 0;
+        timeTotal += float.Parse(inputsConfig[0].text) * 60;
+        timeTotal += float.Parse(inputsConfig[1].text);
+
         for (int i = 0; i < GameObjectsTexts.Length; i++) {
             GameObjectsTexts[i].SetActive(true);
-        }
+        }   
 
         for (int i = 0; i < GameObjectsConfig.Length; i++) {
             GameObjectsConfig[i].SetActive(false);
         }
 
-        standardActivityMinutes = float.Parse(inputsConfig[0].text);
+        standardActivityMinutes = timeTotal * 1 / 6;
+        standardActivityMinutes = Mathf.Round(standardActivityMinutes);
         PlayerPrefs.SetFloat("activity" , standardActivityMinutes);
 
-        standardRestMinutes = float.Parse(inputsConfig[1].text);
+        standardRestMinutes = timeTotal * 1 / 30;
+        standardRestMinutes = Mathf.Round(standardRestMinutes);
         PlayerPrefs.SetFloat("rest", standardRestMinutes);
 
         PlayerPrefs.Save();
