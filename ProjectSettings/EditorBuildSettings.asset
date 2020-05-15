@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pomodoro.unity
     guid: 9ddac013cc990284494b395d7bd9149e
+  - enabled: 1
+    path: Assets/Scenes/Stopwatch.unity
+    guid: 13de21551cb49554899f7b7a48fae450
   m_configObjects: {}

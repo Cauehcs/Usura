@@ -15,6 +15,9 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Pomodoro");
     }
 
+    public void GoToStopwatch() {
+        SceneManager.LoadScene("Stopwatch");
+    }
     public void Exit() {
         SceneManager.LoadScene("Home");
     }
