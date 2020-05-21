@@ -592,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beae0bf3fb079f744bebe1b8e0bd71cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockedEscape: 0
 --- !u!1 &270842374
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +787,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 436559603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 268958897}
+        m_MethodName: GoToSchedule
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &436559603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,18 +1367,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1420383439}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1420383441}
-        m_MethodName: GoToStopwatch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1420383439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,6 +1418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beae0bf3fb079f744bebe1b8e0bd71cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockedEscape: 0
 --- !u!1 &1456915176
 GameObject:
   m_ObjectHideFlags: 0
